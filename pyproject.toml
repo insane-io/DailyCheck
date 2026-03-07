@@ -1,0 +1,9 @@
+[project]
+name = "daily-plate-bot"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = []
+
+# This is the magic. It tells uv that this repo contains multiple independent microservices.
+[tool.uv.workspace]
+members = ["backend", "worker"]
