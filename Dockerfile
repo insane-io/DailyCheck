@@ -10,7 +10,7 @@ RUN pip install uv
 # Copy your entire project into the container
 COPY . .
 
-# Let uv install exactly what is in your lockfile
-RUN uv sync
+# Let uv install everything for the whole workspace (backend + worker)
+RUN uv sync --all-packages
 
 # We don't set a CMD here because docker-compose will handle it!
