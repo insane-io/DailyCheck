@@ -1,0 +1,29 @@
+# Python and virtualenv artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# Git
+.git/
+.gitignore
+
+# Local databases and state
+*.db
+
+# Environment / secrets
+.env
+.env.*
+
+# Editor / OS
+*.swp
+*.swo
+.DS_Store
+.idea/
+.vscode/
+
+# uv lock / caches (optional to keep image small; docker build context can still use uv.lock)
+# If you want uv.lock copied, comment this out.
+#.uv/
